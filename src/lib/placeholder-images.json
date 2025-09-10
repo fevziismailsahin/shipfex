@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A modern warehouse with workers and packages",
+      "imageUrl": "https://picsum.photos/seed/hero/1200/600",
+      "imageHint": "warehouse logistics"
+    },
+    {
+      "id": "inventory",
+      "description": "Shelves of inventory in a warehouse",
+      "imageUrl": "https://picsum.photos/seed/inventory/600/400",
+      "imageHint": "warehouse shelves"
+    },
+    {
+      "id": "orders",
+      "description": "A person packing a box for shipment",
+      "imageUrl": "https://picsum.photos/seed/orders/600/400",
+      "imageHint": "packing box"
+    },
+    {
+      "id": "shipments",
+      "description": "A fleet of delivery trucks",
+      "imageUrl": "https://picsum.photos/seed/shipments/600/400",
+      "imageHint": "delivery trucks"
+    },
+    {
+      "id": "login-bg",
+      "description": "Abstract background for login page",
+      "imageUrl": "https://picsum.photos/seed/loginbg/1920/1080",
+      "imageHint": "abstract geometric"
+    }
+  ]
+}
