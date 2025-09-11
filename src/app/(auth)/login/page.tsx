@@ -44,6 +44,7 @@ export default function LoginPage() {
 
   async function onSubmit(data: LoginFormValues) {
     try {
+      console.log("Login data:", data); // Debug log
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
 

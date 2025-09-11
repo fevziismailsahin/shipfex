@@ -37,10 +37,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   return (
     <div className="w-full">
-      <div className="hidden md:block md:fixed md:inset-y-0 md:z-50 md:w-[220px] lg:w-[280px]">
+      <div className="hidden md:block md:fixed md:inset-y-0 md:z-50 md:w-[280px] lg:w-[320px]">
         <DashboardNav />
       </div>
-      <div className="md:pl-[220px] lg:pl-[280px]">
+      <div className="md:pl-[280px] lg:pl-[320px]">
         <header className="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6 sticky top-0 z-40">
           <Sheet>
             <SheetTrigger asChild>
@@ -53,7 +53,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="flex flex-col p-0 w-[220px] sm:w-[280px]">
+            <SheetContent side="left" className="flex flex-col p-0 w-[280px] sm:w-[320px]">
                <SheetHeader className="sr-only">
                   <SheetTitle>Navigation Menu</SheetTitle>
                   <SheetDescription>Main dashboard navigation links</SheetDescription>
