@@ -12,7 +12,7 @@ use uuid::Uuid;
 const POLL_INTERVAL_MS: u64 = 500;
 const BATCH_SIZE: i64 = 50;
 
-#[derive(Debug, sqlx::FromRow)]
+#[derive(sqlx::FromRow)]
 struct OutboxRow {
     id: Uuid,
     tenant_id: Uuid,
