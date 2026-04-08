@@ -1,0 +1,32 @@
+[workspace]
+members = [
+    "crates/shipfex-platform",
+    "crates/shipfex-domains",
+    "apps/api",
+    "apps/outbox-publisher",
+]
+resolver = "2"
+
+[workspace.dependencies]
+axum = { version = "0.7", features = ["macros"] }
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.8", features = [
+    "postgres",
+    "uuid",
+    "runtime-tokio-rustls",
+    "migrate",
+    "json",
+    "chrono",
+] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
+thiserror = "2"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+chrono = { version = "0.4", features = ["serde"] }
+rdkafka = { version = "0.36", features = ["cmake-build"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["trace"] }
+anyhow = "1"
+dotenvy = "0.15"
